@@ -176,5 +176,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # Generated folders
-assets/css
-html/
+assets/scss
+#html/
