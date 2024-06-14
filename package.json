@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/dsuffern/dsuffern.github.io#readme",
   "devDependencies": {
-    "bulma": "^1.0.1"
+    "browser-sync": "^3.0.2",
+    "bulma": "^1.0.1",
+    "sass": "^1.72.0"
   }
 }
