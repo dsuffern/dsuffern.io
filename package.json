@@ -4,7 +4,7 @@
   "description": "Personal Portfolio Dummy Site",
   "main": "index.js",
   "scripts": {
-    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+    "sass-dev": "sass --load-path=node_modules --watch --update --style=expanded assets/scss:assets/css",
     "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
   },
   "repository": {
