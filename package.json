@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass-dev": "sass --load-path=node_modules --watch --update --style=expanded assets/scss:assets/css",
-    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css",
+    "dev": "next",
+    "build": "node ./assets/scripts/gen-rss.js && next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -20,9 +23,23 @@
     "url": "https://github.com/dsuffern/dsuffern.github.io/issues"
   },
   "homepage": "https://github.com/dsuffern/dsuffern.github.io#readme",
+  "dependencies": {    
+    "gray-matter": "^4.0.3",
+    "next": "latest",
+    "nextra": "^2.0.0-beta.5",
+    "nextra-theme-blog": "^2.0.0-beta.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rss": "^1.2.2"
+  },
   "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "browser-sync": "^3.0.2",
     "bulma": "^1.0.1",
-    "sass": "^1.72.0"
+    "sass": "^1.72.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
